@@ -32,6 +32,7 @@
 		8F7E06A51CC75225006B8590 /* RsaEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E06A41CC75225006B8590 /* RsaEncryption.m */; };
 		8F7E06A81CC758DA006B8590 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E06A71CC758DA006B8590 /* NSString+MD5.m */; };
 		8F7E06AC1CC75AE0006B8590 /* NetworkingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E06AB1CC75AE0006B8590 /* NetworkingUtil.m */; };
+		8F7E06AF1CC87145006B8590 /* 5066741493393_thumbs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E06AE1CC87145006B8590 /* 5066741493393_thumbs.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		8F7E06A71CC758DA006B8590 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "../../../../../../Yoanna/Documents/DJCrop/AFNetworkingWrapper/AFNetworkingWrapper/AFNetworkingWrapper/NSString+MD5.m"; sourceTree = "<group>"; };
 		8F7E06AA1CC75AE0006B8590 /* NetworkingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkingUtil.h; path = ../../../../../../Yoanna/Documents/DJCrop/AFNetworkingWrapper/AFNetworkingWrapper/AFNetworkingWrapper/NetworkingUtil.h; sourceTree = "<group>"; };
 		8F7E06AB1CC75AE0006B8590 /* NetworkingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkingUtil.m; path = ../../../../../../Yoanna/Documents/DJCrop/AFNetworkingWrapper/AFNetworkingWrapper/AFNetworkingWrapper/NetworkingUtil.m; sourceTree = "<group>"; };
+		8F7E06AE1CC87145006B8590 /* 5066741493393_thumbs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5066741493393_thumbs.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		8F7E06341CC72DF2006B8590 /* AFNetworkingWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				8F7E06AD1CC87131006B8590 /* source */,
 				8F7E066D1CC72F93006B8590 /* AFNetworking */,
 				8F7E06691CC72E8A006B8590 /* AFNetworkingWrapper */,
 				8F7E06381CC72DF2006B8590 /* AppDelegate.h */,
@@ -263,6 +266,14 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		8F7E06AD1CC87131006B8590 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E06AE1CC87145006B8590 /* 5066741493393_thumbs.jpg */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7E06451CC72DF2006B8590 /* LaunchScreen.storyboard in Resources */,
+				8F7E06AF1CC87145006B8590 /* 5066741493393_thumbs.jpg in Resources */,
 				8F7E06421CC72DF2006B8590 /* Assets.xcassets in Resources */,
 				8F7E06401CC72DF2006B8590 /* Main.storyboard in Resources */,
 			);
