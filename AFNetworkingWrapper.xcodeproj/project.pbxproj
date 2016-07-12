@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571C306F1D34BE28009BD909 /* DJRSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 571C306E1D34BE28009BD909 /* DJRSAEncrypt.m */; };
+		571C30781D34CBAA009BD909 /* DJAESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 571C30771D34CBAA009BD909 /* DJAESEncrypt.m */; };
 		8F7E06371CC72DF2006B8590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E06361CC72DF2006B8590 /* main.m */; };
 		8F7E063A1CC72DF2006B8590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E06391CC72DF2006B8590 /* AppDelegate.m */; };
 		8F7E063D1CC72DF2006B8590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E063C1CC72DF2006B8590 /* ViewController.m */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571C306D1D34BE28009BD909 /* DJRSAEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJRSAEncrypt.h; sourceTree = "<group>"; };
+		571C306E1D34BE28009BD909 /* DJRSAEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJRSAEncrypt.m; sourceTree = "<group>"; };
+		571C30761D34CBAA009BD909 /* DJAESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJAESEncrypt.h; sourceTree = "<group>"; };
+		571C30771D34CBAA009BD909 /* DJAESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJAESEncrypt.m; sourceTree = "<group>"; };
 		8F7E06321CC72DF2006B8590 /* AFNetworkingWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetworkingWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7E06361CC72DF2006B8590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F7E06381CC72DF2006B8590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +140,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571C306C1D34BDF9009BD909 /* DJEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				571C306D1D34BE28009BD909 /* DJRSAEncrypt.h */,
+				571C306E1D34BE28009BD909 /* DJRSAEncrypt.m */,
+				571C30761D34CBAA009BD909 /* DJAESEncrypt.h */,
+				571C30771D34CBAA009BD909 /* DJAESEncrypt.m */,
+			);
+			path = DJEncrypt;
+			sourceTree = "<group>";
+		};
 		8F7E06291CC72DF2006B8590 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +174,7 @@
 		8F7E06341CC72DF2006B8590 /* AFNetworkingWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				571C306C1D34BDF9009BD909 /* DJEncrypt */,
 				8F7E06AD1CC87131006B8590 /* source */,
 				8F7E066D1CC72F93006B8590 /* AFNetworking */,
 				8F7E06691CC72E8A006B8590 /* AFNetworkingWrapper */,
@@ -406,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7E066C1CC72ED0006B8590 /* AFNetworkingWrapper.m in Sources */,
+				571C30781D34CBAA009BD909 /* DJAESEncrypt.m in Sources */,
 				8F7E06851CC72F93006B8590 /* AFSecurityPolicy.m in Sources */,
 				8F7E063D1CC72DF2006B8590 /* ViewController.m in Sources */,
 				8F7E06A51CC75225006B8590 /* RsaEncryption.m in Sources */,
@@ -414,6 +433,7 @@
 				8F7E06941CC74F45006B8590 /* NSData+Base64.m in Sources */,
 				8F7E06811CC72F93006B8590 /* AFHTTPRequestOperation.m in Sources */,
 				8F7E06A81CC758DA006B8590 /* NSString+MD5.m in Sources */,
+				571C306F1D34BE28009BD909 /* DJRSAEncrypt.m in Sources */,
 				8F7E063A1CC72DF2006B8590 /* AppDelegate.m in Sources */,
 				8F7E06901CC733FA006B8590 /* LswuyouNetWorkObserver.m in Sources */,
 				8F7E06871CC72F93006B8590 /* AFURLRequestSerialization.m in Sources */,
