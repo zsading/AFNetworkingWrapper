@@ -4,9 +4,10 @@
 
 ## 加密原理
 
-由于RSA加解密速度慢，不适合大量数据文件加密，因此在网络中完全用公开密码体制传输机密信息是没有必要，也是不太现实的。<br>
-加密速度很快，但是在网络传输过程中如何安全管理密钥是保证加密安全的重要环节。如果在传送机密信息的双方，使用对称密码体制对传输数据加密，同时使用不对称密码体制来传送的密钥，就可以综合发挥的优点同时避免它们缺点来实现一种新的数据加密方案。
+- 由于RSA加解密速度慢，不适合大量数据文件加密，因此在完全用RSA来加密业务信息不太现实。
+- AES加密速度较快，但是如何安全管理密钥是一个问题。
 
+基于以上结论，如果在传送机密信息的双方，使用对称加密(AES)对传输的业务数据进行加密，同时使用不对称加密(RSA)来加密传送的AES密钥，这样就可以同时避免以上缺点。
 
 ## Schematic Diagram
 
@@ -16,9 +17,10 @@
 ## Basic usage
 
 ### Use DJEncrypt solely
-
-	//RSA
-	[DJRSAEncrypt RSAEncrypotoTheData:TheStringYouWantToEncode RSAEncrypotoSpliter:@"#PART#"];
-	//AES
-	[DJAESEncrypt AES256EncryptWithKey:AESKey self:YourDataKey];
-    [DJAESEncrypt AES256DecryptWithKey:AESKey self:YourDataKey];
+```
+//RSA
+[DJRSAEncrypt RSAEncrypotoTheData:TheStringYouWantToEncode RSAEncrypotoSpliter:@"#PART#"];
+//AES
+[DJAESEncrypt AES256EncryptWithKey:AESKey self:YourDataKey];
+[DJAESEncrypt AES256DecryptWithKey:AESKey self:YourDataKey];
+```
